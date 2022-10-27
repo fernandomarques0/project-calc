@@ -2,7 +2,9 @@ import './App.css';
 
 function App() {
   return (
-    console.log("teste")
+    <div>
+      teste
+    </div>
   );
 }
 
