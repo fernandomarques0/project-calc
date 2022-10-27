@@ -45,48 +45,48 @@ function App() {
     <>
     <Box sx={{ flexGrow: 1, padding: '25px 50px 75px 100px' }}>
       <Grid container spacing={2}>
-        <Grid item xs={2}>
+        <Grid item xs={5}>
           <TextField
             id="outlined-basic" label="Vcc" name="vcc" variant="outlined" onChange={handleChange} value={values.vcc}
           />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5}>
           <TextField
             id="outlined-basic" label="Vbb" name="vbb" variant="outlined" onChange={handleChange} value={values.vbb} 
           />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5}>
           <TextField
             id="outlined-basic" label="Ganho" name="ganho" variant="outlined" onChange={handleChange} value={values.ganho} 
           />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5}>
           <TextField
             id="outlined-basic" label="Rb" name="rb" variant="outlined" onChange={handleChange} value={values.rb}
           />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5}>
           <TextField
             id="outlined-basic" label="Rc" name="rc" variant="outlined" onChange={handleChange} value={values.rc}
           />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={10}>
           <Button size="large" variant="outlined" onClick={() => handleSubmit(values)}>Calcular</Button>
         </Grid>
       </Grid>
       {
-      <Grid container spacing={2}>
-        <Grid item xs={2}>
+      <Grid container spacing={2} sx={{ marginTop: "50px" }}>
+        <Grid item xs={10}>
           <Typography variant="subtitle2" component="h2">
             ib = {results.ib}
           </Typography>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={10}>
           <Typography variant="subtitle2" component="h2">
             ic = {results.ic}
           </Typography>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={10}>
           <Typography variant="subtitle2" component="h2">
             vce = {results.vce}
           </Typography>
